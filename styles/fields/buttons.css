@@ -6,6 +6,7 @@ button {
   border-radius: .5rem;
 
   cursor: pointer;
+  text-align: center;
 
   &.btn-primary {
     color: white ;
@@ -19,7 +20,6 @@ button {
   }
 
   &.btn-secondary {
-    margin-left: auto;
     border: 1px solid var(--text-highlight);
     
     &:hover,
@@ -30,4 +30,10 @@ button {
 
   }
 
+}
+
+@media (width >= 80em) {
+  .btn-secondary {
+    margin-left: auto;
+  }
 }
